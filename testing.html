@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="static\css\style.css">
+    <title>Registro Alumnos</title>
+</head>
+<body class="bg-light">
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/index.html" class="nav-link px-2 text-secondary">Inicio</a></li>
+                <li><a href="/alumno-vista.html" class="nav-link px-2 text-white">Alumnos</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Docentes</a></li>
+                <li><a href="/principal.php" class="nav-link px-2 text-white">Gestion Docente</a></li>
+                <li><a href="https://www.sangabrielriobamba.edu.ec/" class="nav-link px-2 text-white">ITSGA</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Iniciar Sesion</button>
+              <button type="button" class="btn btn-warning">Registrarme</button>
+            </div>
+        </div>
+        </div>
+    </header>
+    
+        <div class="container">
+        <main>        
+            <div class="row g-5">
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Registro de Proyectos de Practicas</h4>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Porfavor Ingrese sus Nombres.
+                    </div>
+                    </div>
+        
+                    <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Porfavor Ingrese sus Apellidos.
+                    </div>
+                    </div>
+        
+                    <div class="col-12">
+                        <label for="username" class="form-label">Cedula o Pasaporte</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="username" placeholder="1700000005" required="">
+                            <div class="invalid-feedback">
+                                Ingrese los 10 Dígitos de su número de cedula.
+                            </div>
+                            </div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <label for="username" class="form-label">Buscar por Nombres o CI</label>
+                        <div class="tex-end">
+                            <button type="button" class="btn btn-warning">Buscar</button>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="col-md-5">
+                    <label for="proyectoV" class="form-label">Practicas</label>
+                    <select class="form-select" id="proyectos" required="">
+                        <option value="">Seleccione El tipo de Proyecto</option>
+                        <option>Practica 1</option>
+                        <option>Practica 2</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Selecciona una respuesta valida.
+                    </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Proyecto Completo</label>
+                        <input type="file" class="form-control" id="lastName" placeholder="" value="Subir Archivo" required="">
+                        <div class="invalid-feedback">
+                            Documento invalido, ingrese nuevamente.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Añadir Tema al Proyecto</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Ingrese Nuevamente.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Ingrese el numero de oficio</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Ingrese Nuevamente.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="username" class="form-label">Guardar Nombre</label>
+                    <div class="tex-end">
+                        <button type="button" class="btn btn-warning">Guardar</button>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Anexo 1</label>
+                    <input type="file" class="form-control" id="lastName" placeholder="Subir Archivo" value="" accept=".doc,.pdf,.docx" required="">
+                    <div class="invalid-feedback">
+                    Documento invalido, ingrese nuevamente.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Anexo 2</label>
+                    <input type="file" class="form-control" id="lastName" placeholder="Subir Archivo" value="" required="">
+                    <div class="invalid-feedback">
+                    Documento invalido, ingrese nuevamente.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Anexo 3</label>
+                    <input type="file" class="form-control" id="lastName" placeholder="Subir Archivo" value="" required="">
+                    <div class="invalid-feedback">
+                    Documento invalido, ingrese nuevamente.
+                    </div>
+                </div>
+            </div>
+            <div class="btn-margen">
+                <a href="" class="btn btn-primary">Cancelar</a>
+                <a href="" class="btn btn-primary">Guardar</a>
+                <a href="static/templates/registro-practicas.html" class="btn btn-primary" required="">Siguiente</a>
+            </div>
+        </main>
+    </div>
+    <hr class="my-4">
+        <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="https://sangabrielriobamba.edu.ec/" class="nav-link px-2 text-muted">Instituto</a></li>
+            <li class="nav-item"><a href="https://elearning.sangabrielriobamba.edu.ec/" class="nav-link px-2 text-muted">Moodle</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2022 Alexander, ITSGA</p>
+        </footer>
+        </div>
+        
+</body>
+</html>

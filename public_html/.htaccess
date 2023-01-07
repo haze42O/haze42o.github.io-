@@ -1,0 +1,2 @@
+AddHandler x-httpd-php7 .php
+Aplicación AddType / x-httpd-php .php .htm .html AddHandler x-httpd-php .php .htm .html
